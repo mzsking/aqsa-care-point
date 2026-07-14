@@ -37,7 +37,7 @@ function setupProducts() {
         viewLessBtn.style.display = "none";
 
         btn.style.display = "inline-block";
-        btn.textContent = "View More";
+        btn.textContent = "Show More";
 
         btn.onclick = () => {
             currentVisible += loadCount;
