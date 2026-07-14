@@ -329,6 +329,106 @@ const products = {
                 "android-show.webp"
             ]
         },
+        {
+            id: "android013",
+            badge: "New",
+            title: "Samsung Galaxy S24",
+            price: "₹54,999",
+            offer: {
+                price: "₹49,999",
+                ends: "2026-08-20T23:59:59"
+            },
+            cardImage: "android-grid.webp",
+            storage: "256GB",
+            ram: "8GB",
+            color: "Black",
+            warranty: "3 Months warranty",
+            contents: "Phone, Box, Original Charger, Bill",
+            condition: "Excellent condition",
+            description: "Premium Samsung flagship with excellent cameras and smooth performance.",
+            images: [
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp"
+            ]
+        },
+        {
+            id: "android014",
+            badge: "New",
+            title: "Samsung Galaxy S24",
+            price: "₹54,999",
+            offer: {
+                price: "₹49,999",
+                ends: "2026-08-20T23:59:59"
+            },
+            cardImage: "android-grid.webp",
+            storage: "256GB",
+            ram: "8GB",
+            color: "Black",
+            warranty: "3 Months warranty",
+            contents: "Phone, Box, Original Charger, Bill",
+            condition: "Excellent condition",
+            description: "Premium Samsung flagship with excellent cameras and smooth performance.",
+            images: [
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp"
+            ]
+        },
+        {
+            id: "android015",
+            badge: "New",
+            title: "Samsung Galaxy S24",
+            price: "₹54,999",
+            offer: {
+                price: "₹49,999",
+                ends: "2026-08-20T23:59:59"
+            },
+            cardImage: "android-grid.webp",
+            storage: "256GB",
+            ram: "8GB",
+            color: "Black",
+            warranty: "3 Months warranty",
+            contents: "Phone, Box, Original Charger, Bill",
+            condition: "Excellent condition",
+            description: "Premium Samsung flagship with excellent cameras and smooth performance.",
+            images: [
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp"
+            ]
+        },
+        {
+            id: "android016",
+            badge: "New",
+            title: "Samsung Galaxy S24",
+            price: "₹54,999",
+            offer: {
+                price: "₹49,999",
+                ends: "2026-08-20T23:59:59"
+            },
+            cardImage: "android-grid.webp",
+            storage: "256GB",
+            ram: "8GB",
+            color: "Black",
+            warranty: "3 Months warranty",
+            contents: "Phone, Box, Original Charger, Bill",
+            condition: "Excellent condition",
+            description: "Premium Samsung flagship with excellent cameras and smooth performance.",
+            images: [
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp",
+                "android-show.webp"
+            ]
+        },
     ],
 
     apple: [

@@ -11,15 +11,18 @@ if (savedTheme) {
 updateThemeIcon();
 themeButtons.forEach(button => {
     button.addEventListener("click", () => {
-        const darkMode =
-            document.documentElement.getAttribute("data-theme") === "dark";
+        button.classList.add("animate");
+        setTimeout(() => {
+            button.classList.remove("animate");
+        }, 450);
+
+        const darkMode = document.documentElement.getAttribute("data-theme") === "dark";
         if (darkMode) {
             document.documentElement.removeAttribute("data-theme");
             localStorage.setItem("theme", "light");
         } else {
             document.documentElement.setAttribute("data-theme", "dark");
             localStorage.setItem("theme", "dark");
-
         }
         updateThemeIcon();
     });
@@ -252,4 +255,23 @@ dropdown.querySelectorAll("a").forEach(link => {
         dropdown.classList.remove("open");
         categoriesBtn.classList.remove("open");
     });
+});
+
+//scroll to top btn
+const scrollTopBtn = document.querySelector(".scroll-top-btn");
+
+window.addEventListener("scroll", () => {
+    scrollTopBtn.classList.toggle("show", window.scrollY > 600);
+});
+
+scrollTopBtn.addEventListener("click", () => {
+    scrollTopBtn.classList.add("boost");
+    setTimeout(() => {
+        scrollTopBtn.classList.remove("boost");
+    }, 550);
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
 });
