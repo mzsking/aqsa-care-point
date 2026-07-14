@@ -1,3 +1,10 @@
+//analytics events
+function trackEvent(eventName, params = {}) {
+    if (typeof gtag === "function") {
+        gtag("event", eventName, params);
+    }
+}
+
 //dark mode
 const themeButtons = document.querySelectorAll(".theme-toggle");
 const themeIcons = document.querySelectorAll(".theme-toggle i");
@@ -274,4 +281,42 @@ scrollTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 
+});
+
+//whatsapp analytics
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+    link.addEventListener("click", () => {
+        trackEvent("whatsapp_click");
+    });
+});
+
+//phone call analytics
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener("click", () => {
+        trackEvent("call_click");
+    });
+});
+
+//instagram, facebook, x analytics
+document.querySelectorAll('a[href*="instagram"]').forEach(link => {
+    link.addEventListener("click", () => {
+        trackEvent("instagram_click");
+    });
+});
+
+document.querySelectorAll('a[href*="facebook"]').forEach(link => {
+    link.addEventListener("click", () => {
+        trackEvent("facebook_click");
+    });
+});
+
+document.querySelectorAll('a[href*="x.com"]').forEach(link => {
+    link.addEventListener("click", () => {
+        trackEvent("x_click");
+    });
+});
+
+//map btn analytics 
+document.querySelector(".map-btn .btn")?.addEventListener("click", () => {
+    trackEvent("map_click");
 });

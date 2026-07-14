@@ -63,19 +63,12 @@ function updateOfferTimer(endDate) {
     clearInterval(offerTimer);
 
     function tick() {
-
         const now = new Date();
-
         const end = new Date(endDate);
-
         const diff = end - now;
-
         if (diff <= 0) {
-
             clearInterval(offerTimer);
-
             productOfferTimer.textContent = "Offer Ended";
-
             return;
 
         }
@@ -96,18 +89,22 @@ function updateOfferTimer(endDate) {
 
 }
 
+
 //Modal
 function openProduct(productId) {
-
     let product = null;
     Object.values(products).forEach(category => {
         const found = category.find(item => item.id === productId);
         if (found) product = found;
-
-
     });
 
     if (!product) return;
+    //view product analytics.
+    trackEvent("view_product", {
+    product_id: product.id,
+    product_name: product.title
+});
+
     if (product.sold) return;
     mainProductImg.src = "";
     thumbnailContainer.innerHTML = "";
